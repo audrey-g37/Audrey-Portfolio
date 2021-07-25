@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.main-info nav {
+.title-info nav {
   background-color: lightgrey;
   padding: 20px;
   padding-bottom: 5px;
@@ -25,7 +25,7 @@ h1 {
   border-width: thick;
 }
 
-.main-info nav h3 {
+.title-info nav h3 {
   display: flex;
   align-items: flex-end;
 }
@@ -34,10 +34,11 @@ h1 {
   display: flex;
 }
 
-ul li {
+.title-info ul li a {
   list-style: none;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
+  color: black;
   background-color: rgb(188, 217, 197);
   flex-wrap: wrap;
   padding: 2px;
