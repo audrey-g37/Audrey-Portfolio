@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: rgb(236, 210, 210);
+  margin: 10px;
+  padding: 10px;
+  border-style: solid;
+  border-color: darkgrey;
+}
+.main-info nav {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-info nav h3 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-img {
+  max-width: 100%;
+  display: block;
+}
+
+.same-page-links {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  font-size: 20px;
+  flex-wrap: wrap;
+  padding: 2px;
+  border-style: solid;
+  border-color: darkgrey;
+  margin: 5px;
+  margin-top: 15px;
+}
