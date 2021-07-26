@@ -5,29 +5,24 @@
 }
 
 .title-info nav {
-  background-color: lightgrey;
+  background-color: darkred;
   padding: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
-h1 {
+.title-info h1 {
   font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   margin-left: 10px;
   margin-top: 10px;
   background-color: rgb(188, 217, 197);
   margin: 10px;
   padding: 10px;
-  border-style: solid;
-  border-color: white;
-  border-width: thick;
-}
-
-.title-info nav h3 {
-  display: flex;
-  align-items: flex-end;
+  border: solid thick white;
 }
 
 .same-page-links {
@@ -36,14 +31,98 @@ h1 {
 
 .title-info ul li a {
   list-style: none;
-  font-size: 20px;
+  font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   color: black;
   background-color: rgb(188, 217, 197);
   flex-wrap: wrap;
-  padding: 2px;
-  margin: 5px;
-  margin-top: 15px;
-  text-decoration: underline;
-  text-decoration-color: white;
+  padding: 6px;
+  margin: 12px;
+  text-decoration: underline white;
+}
+
+main section {
+  margin: 25px;
+}
+
+main section h1 {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: darkred;
+  margin: 10px 20px 0px 10px;
+  padding: 10px 10px 0px 10px;
+  border-right: solid darkred;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+#about-me {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+#about-me p {
+  margin: 20px;
+}
+
+#work {
+  display: flex;
+  justify-content: center;
+}
+#work .sample-main {
+  position: relative;
+}
+
+#work .sample-main img {
+  margin: 20px;
+  border: solid thick darkred;
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#work .sample-main a {
+  position: absolute;
+  top: 175px;
+  left: 30px;
+  background-color: rgb(188, 217, 197);
+  padding: 5px;
+  color: darkred;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+}
+
+#work .sample-secondary {
+  position: relative;
+}
+
+#work .sample-secondary img {
+  margin: 20px;
+  border: solid thick darkred;
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#work .sample-secondary a {
+  position: absolute;
+  top: 175px;
+  left: 30px;
+  background-color: rgb(188, 217, 197);
+  padding: 5px;
+  color: darkred;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+
+#contact {
+  display: flex;
+  align-items: flex-start;
 }
