@@ -1,6 +1,7 @@
 :root {
   --light: rgb(188 217 197);
   --dark: darkred;
+  --medium: rgb(147, 227, 236);
 }
 
 * {
@@ -18,7 +19,7 @@ body .title-info {
 }
 
 .title-info h1 {
-  font-size: 60px;
+  font-size: 65px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin: 5px 0px 30px 10px;
@@ -31,13 +32,20 @@ body .title-info {
 .same-page-links {
   display: flex;
   position: absolute;
-  top: 160px;
+  top: 170px;
   right: 5px;
+}
+
+.same-page-links li :hover,
+#work .work-links div a:hover,
+#contact ul .working-link:hover {
+  background-color: var(--medium);
+  padding: 10px;
 }
 
 .title-info ul li a {
   list-style: none;
-  font-size: 25px;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: black;
@@ -58,7 +66,7 @@ main section {
 }
 
 main section h1 {
-  font-size: 45px;
+  font-size: 55px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   color: var(--dark);
@@ -143,7 +151,7 @@ main section h1 {
 #contact ul li {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 10px;
+  margin: 8px;
   display: inline-block;
   background-color: var(--light);
   padding: 5px;
