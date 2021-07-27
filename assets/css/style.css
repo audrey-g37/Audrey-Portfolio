@@ -65,9 +65,12 @@ main {
 
 #about-me {
   display: flex;
+}
+
+#about-me p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 1.25;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 #work {
@@ -129,4 +132,34 @@ main {
 
 #contact {
   display: flex;
+}
+
+#contact ul li {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+#contact ul li .same-block {
+  background-color: magenta;
+  padding: 30px;
+}
+
+#contact ul li .new-block {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  section,
+  h1 {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main,
+  section,
+  h1 {
+    font-size: 2px;
+  }
 }
