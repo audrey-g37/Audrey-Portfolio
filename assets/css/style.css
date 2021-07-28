@@ -1,4 +1,5 @@
 :root {
+  --extra-light: white;
   --light: rgb(188 217 197);
   --dark: darkred;
   --medium: rgb(147, 227, 236);
@@ -10,7 +11,7 @@
   padding: 0;
 }
 
-body .title-info {
+body header {
   background-color: var(--dark);
   padding: 40px;
   display: flex;
@@ -18,25 +19,25 @@ body .title-info {
   align-items: flex-end;
 }
 
-.title-info h1 {
+header h1 {
   font-size: 65px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   margin: 5px 0px 30px 10px;
   background-color: var(--light);
   padding: 10px;
-  border: solid thick white;
+  border: solid 8px var(--extra-light);
   position: relative;
 }
 
-.same-page-links {
+header ul {
   display: flex;
   position: absolute;
   top: 170px;
   right: 5px;
 }
 
-.title-info ul li a {
+header li a {
   list-style: none;
   font-size: 23px;
   font-family: Arial, Helvetica, sans-serif;
@@ -46,12 +47,12 @@ body .title-info {
   flex-wrap: wrap;
   padding: 6px;
   margin: 12px;
-  text-decoration: underline white;
+  text-decoration: underline var(--extra-light);
 }
 
-.same-page-links li :hover,
-#work .work-links div a:hover,
-#contact ul .working-link:hover {
+header li a:hover,
+#work section div a:hover,
+#contact ul a:hover {
   background-color: var(--medium);
   padding: 15px;
   font-size: 28px;
@@ -90,22 +91,25 @@ main section h1 {
   width: 400px;
   height: 300px;
   margin-right: 20px;
+  border: solid var(--extra-light) 8px;
+  background-color: var(--light);
+  padding: 10px;
 }
 
 #work {
   display: flex;
 }
-#work .work-links {
+#work section {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
 }
 
-#work .work-links .sample-main {
+#work section .sample-main {
   position: relative;
 }
 
-#work .work-links .sample-main img {
+#work section .sample-main img {
   margin: 0px 20px 10px;
   border: solid thick var(--dark);
   width: 640px;
@@ -113,7 +117,7 @@ main section h1 {
   object-fit: cover;
 }
 
-#work .work-links .sample-main a {
+#work section .sample-main a {
   position: absolute;
   bottom: 40px;
   left: 30px;
@@ -125,11 +129,11 @@ main section h1 {
   font-size: 20px;
 }
 
-#work .work-links .sample-secondary {
+#work section .sample-secondary {
   position: relative;
 }
 
-#work .work-links .sample-secondary img {
+#work section .sample-secondary img {
   margin: 20px 20px 0px;
   border: solid thick var(--dark);
   width: 300px;
@@ -137,7 +141,7 @@ main section h1 {
   object-fit: cover;
 }
 
-#work .work-links .sample-secondary a {
+#work section .sample-secondary a {
   position: absolute;
   bottom: 30px;
   left: 30px;
@@ -160,12 +164,17 @@ main section h1 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 8px;
   display: inline-block;
-  background-color: var(--light);
-  padding: 5px;
   font-weight: 550;
 }
 
+#contact ul .no-link-info {
+  background-color: var(--light);
+  padding: 5px;
+}
+
 #contact ul li a {
+  background-color: var(--light);
+  padding: 5px;
   color: black;
 }
 
