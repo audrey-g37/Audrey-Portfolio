@@ -16,7 +16,7 @@
 
 /* Styling for the top section with my name and links. */
 
-body header {
+header {
   background-color: var(--dark);
   padding: 40px;
   display: flex;
@@ -44,7 +44,7 @@ header ul {
 
 header li a {
   list-style: none;
-  font-size: 23px;
+  font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: black;
@@ -58,7 +58,7 @@ header li a {
 /* Hover effects for all links on the page. */
 
 header li a:hover,
-#work section div a:hover,
+#work section figure a:hover,
 #contact ul a:hover {
   background-color: var(--medium);
   padding: 15px;
@@ -202,16 +202,7 @@ main section h1 {
 }
 
 @media screen and (max-width: 768px) {
-  main,
-  section,
   h1 {
-    font-size: 8px;
-  }
-}
-@media screen and (max-width: 320px) {
-  main,
-  section,
-  h1 {
-    font-size: 2px;
+    background-color: lime;
   }
 }
