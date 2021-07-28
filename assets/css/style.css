@@ -14,7 +14,7 @@
   padding: 0;
 }
 
-/* Styling for the top section with my name and links. */
+/* Styling for the top section with my name and same-page links. */
 
 header {
   background-color: var(--dark);
@@ -58,11 +58,15 @@ header li a {
 /* Hover effects for all links on the page. */
 
 header li a:hover,
-#work section figure a:hover,
 #contact ul a:hover {
   background-color: var(--medium);
   padding: 15px;
   font-size: 28px;
+}
+
+#work section figure:hover {
+  background-color: var(--medium);
+  padding: 10px;
 }
 
 /* Styling for everything below the top header. */
@@ -117,20 +121,18 @@ main section h1 {
 #work section {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
 }
 
-/* Styling for the links to each project. */
+/* Styling for the text shown overlapping each image. */
 
-#work section a {
+#work h4 {
   position: absolute;
-  left: 30px;
+  left: 40px;
+  padding: 10px;
   background-color: var(--light);
-  padding: 5px;
   color: var(--dark);
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 20px;
+  text-decoration: underline var(--dark);
 }
 
 /* Styling for the display of the 'main' project. */
@@ -139,34 +141,37 @@ main section h1 {
   position: relative;
 }
 
-#work section .sample-main img {
-  margin: 0px 20px 10px;
+#work .sample-main h4 {
+  bottom: 60px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#work .sample-main img {
+  margin: 20px 20px;
   border: solid thick var(--dark);
   width: 640px;
   height: 250px;
   object-fit: cover;
 }
 
-#work section .sample-main a {
-  bottom: 40px;
-}
-
 /* Styling for the display of the 'secondary' projects. */
-
 #work section .sample-secondary {
   position: relative;
 }
 
-#work section .sample-secondary img {
-  margin: 20px 20px 0px;
+#work .sample-secondary h4 {
+  bottom: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#work .sample-secondary img {
+  margin: 20px 20px;
   border: solid thick var(--dark);
   width: 300px;
   height: 200px;
   object-fit: cover;
-}
-
-#work section .sample-secondary a {
-  bottom: 25px;
 }
 
 /* Styling for the contact me section. */
@@ -183,12 +188,12 @@ main section h1 {
 #contact ul li {
   font-size: 23px;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 8px;
+  margin: 6px;
   display: inline-block;
   font-weight: 550;
 }
 
-/* Class of no-link-info was needed for pseudo element of hover on the anchor tags. */
+/* Class of no-link-info was needed for pseudo-class of hover on the anchor tags. */
 
 #contact ul .no-link-info {
   background-color: var(--light);
@@ -199,10 +204,4 @@ main section h1 {
   background-color: var(--light);
   padding: 5px;
   color: black;
-}
-
-@media screen and (max-width: 768px) {
-  h1 {
-    background-color: lime;
-  }
 }
