@@ -205,3 +205,14 @@ main section h1 {
   padding: 5px;
   color: black;
 }
+
+/* MEDIA QUERIES NOT WORKING -- see comment with submission. */
+
+/* Adjusting responsiveness for screen size. */
+
+/* @media screen and (max-width: 400px) {
+      body main #about-me p {
+        background-color: magenta;
+        font-size: 12px;
+      }
+    } */
