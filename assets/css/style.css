@@ -1,9 +1,9 @@
 /* Variables declared in case I want to change the color scheme. */
 :root {
   --extra-light: white;
-  --light: rgb(188 217 197);
+  --light: rgb(252, 200, 180);
   --dark: darkred;
-  --medium: rgb(147, 227, 236);
+  --medium: rgb(138, 180, 141);
 }
 
 /* Universal elements applied to the whole site. */
