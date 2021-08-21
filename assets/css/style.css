@@ -74,7 +74,7 @@ header li a:hover,
 main {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(226, 226, 226);
 }
 
 main section {
