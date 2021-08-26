@@ -1,9 +1,18 @@
-/* Variables declared in case I want to change the color scheme. */
+/* Variables declared in case I want to change the color scheme -- use split complementary. */
 :root {
-  --extra-light: white;
-  --light: rgb(252, 200, 180);
-  --dark: darkred;
-  --medium: rgb(138, 180, 141);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+
+  --dark3: rgb(182, 182, 182);
+  --light3: rgb(226, 226, 226);
+
+  --light1: #98df96;
+  --dark1: #629160;
+
+  --light2: #e3acfa;
+  --dark2: #a382b1;
+
+  --contrast: #e69286;
 }
 
 /* Universal elements applied to the whole site. */
@@ -17,7 +26,8 @@
 /* Styling for the top section with my name and same-page links. */
 
 header {
-  background-color: var(--dark);
+  background-color: var(--dark3);
+  border-bottom: solid 5px var(--dark1);
   padding: 40px;
   display: flex;
   justify-content: space-between;
@@ -29,9 +39,10 @@ header h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   margin: 5px 0px 30px 10px;
-  background-color: var(--light);
   padding: 10px;
-  border: solid 8px var(--extra-light);
+  background-color: var(--dark2);
+  color: var(--white);
+  border: solid 10px var(--dark1);
   position: relative;
 }
 
@@ -44,28 +55,30 @@ header ul {
 
 header li a {
   list-style: none;
+  flex-wrap: wrap;
+  padding: 8px;
+  margin: 12px;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  color: black;
-  background-color: var(--light);
-  flex-wrap: wrap;
-  padding: 6px;
-  margin: 12px;
-  text-decoration: underline var(--extra-light);
+  color: var(--white);
+  background-color: var(--dark2);
+  text-decoration: underline 4px var(--light1);
 }
 
 /* Hover effects for all links on the page. */
 
 header li a:hover,
-#contact ul a:hover {
-  background-color: var(--medium);
-  padding: 15px;
+#contact .link-info a:hover {
+  background-color: var(--contrast);
+  text-decoration: underline 4px var(--dark2);
+  color: var(--black);
+  padding: 10px;
   font-size: 28px;
 }
 
 #work section figure:hover {
-  background-color: var(--medium);
+  background-color: var(--contrast);
   padding: 10px;
 }
 
@@ -74,7 +87,7 @@ header li a:hover,
 main {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(226, 226, 226);
+  background-color: var(--light3);
 }
 
 main section {
@@ -86,11 +99,11 @@ main section {
 main section h1 {
   font-size: 55px;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  color: var(--dark);
+  font-weight: 570px;
+  color: var(--dark1);
   margin: 0px 20px 0px 0px;
   padding: 10px 10px 0px 10px;
-  border-right: solid var(--dark);
+  border-right: solid var(--dark1);
 }
 
 /* Styling for the about me section. */
@@ -108,9 +121,9 @@ main section h1 {
   width: 400px;
   height: 300px;
   margin-right: 20px;
-  border: solid var(--extra-light) 8px;
-  background-color: var(--light);
-  padding: 10px;
+  border: solid var(--dark2) 10px;
+  background-color: var(--white);
+  padding: 8px;
 }
 
 /* Styling for the section showcasing my work. */
@@ -129,10 +142,11 @@ main section h1 {
   position: absolute;
   left: 40px;
   padding: 10px;
-  background-color: var(--light);
-  color: var(--dark);
+  background-color: var(--dark1);
+  color: var(--white);
   font-family: Arial, Helvetica, sans-serif;
-  text-decoration: underline var(--dark);
+  text-decoration: underline 4px var(--dark2);
+  border: solid 2px var(--dark2);
 }
 
 /* Styling for the display of the 'main' project. */
@@ -149,7 +163,7 @@ main section h1 {
 
 #work .sample-main img {
   margin: 20px 20px;
-  border: solid thick var(--dark);
+  border: solid 10px var(--dark2);
   width: 640px;
   height: 250px;
   object-fit: cover;
@@ -168,7 +182,7 @@ main section h1 {
 
 #work .sample-secondary img {
   margin: 20px 20px;
-  border: solid thick var(--dark);
+  border: solid 6px var(--dark2);
   width: 300px;
   height: 200px;
   object-fit: cover;
@@ -196,23 +210,37 @@ main section h1 {
 /* Class of no-link-info was needed for pseudo-class of hover on the anchor tags. */
 
 #contact ul .no-link-info {
-  background-color: var(--light);
-  padding: 5px;
+  padding: 8px;
+  color: var(--white);
+  background-color: var(--dark2);
 }
 
-#contact ul li a {
-  background-color: var(--light);
+#contact ul .link-info a {
   padding: 5px;
-  color: black;
+  color: var(--white);
+  background-color: var(--dark2);
+  text-decoration: underline 4px var(--light1);
 }
-
-/* MEDIA QUERIES NOT WORKING -- see comment with submission. */
 
 /* Adjusting responsiveness for screen size. */
 
-/* @media screen and (max-width: 400px) {
-      body main #about-me p {
-        background-color: magenta;
-        font-size: 12px;
-      }
-    } */
+/* @media screen and (max-width: 1440px) {
+  body main #about-me p {
+    background-color: magenta;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body main #about-me p {
+    background-color: magenta;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body main #about-me p {
+    background-color: magenta;
+    font-size: 12px;
+  }
+} */
