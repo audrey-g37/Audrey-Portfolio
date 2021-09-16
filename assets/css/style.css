@@ -6,13 +6,13 @@
   --dark3: rgb(182, 182, 182);
   --light3: rgb(226, 226, 226);
 
-  --light1: #98df96;
-  --dark1: #629160;
+  --light1: #bab200;
+  --dark1: #878444;
 
-  --light2: #e3acfa;
-  --dark2: #a382b1;
+  --light2: #92bdf5;
+  --dark2: #0082ba;
 
-  --contrast: #e69286;
+  --contrast: #edb918;
 }
 
 /* Universal elements applied to the whole site. */
@@ -213,6 +213,7 @@ main section h1 {
   padding: 8px;
   color: var(--white);
   background-color: var(--dark2);
+  text-decoration: underline 4px var(--light1);
 }
 
 #contact ul .link-info a {
