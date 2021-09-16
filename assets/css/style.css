@@ -1,4 +1,4 @@
-/* Variables declared in case I want to change the color scheme -- use split complementary. */
+/* Variables declared in case I want to change the color scheme -- use compound complementary. */
 :root {
   --white: rgb(255, 255, 255);
   --black: rgb(0, 0, 0);
